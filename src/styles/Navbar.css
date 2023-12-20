@@ -1,0 +1,126 @@
+#navbar-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* padding: 0px 10px; */
+    /* Adjust the padding as needed */
+    background-color: #fff;
+    /* Optional background color for the navbar */
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+    /* Optional box shadow */
+    z-index: 5;
+    background-color: #889bae;
+}
+
+#navbar-inner-container-left {
+    margin-left: 20px;
+}
+
+#logo-letter {
+    font-size: 28px;
+    /* color: #7f7f7f; */
+    color: white;
+    transition: transform 0.5s ease;
+    padding-bottom: 5px;
+    cursor: pointer;
+}
+
+#logo-word {
+    height: 28px;
+    padding-top: 4px;
+    font-size: 20px;
+    margin-right: 10px;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.logo-group {
+    display: flex;
+}
+
+.slide-in {
+    animation: slideIn 0.5s ease forwards;
+}
+
+@keyframes slideIn {
+    from {
+        transform: translateX(-100%);
+    }
+
+    to {
+        transform: translateX(0);
+    }
+}
+
+#navbar-inner-container-left {
+    display: flex;
+    justify-content: flex-start;
+}
+
+#navbar-inner-container-right {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.nav-item {
+    margin-right: 40px;
+    cursor: pointer;
+    position: relative;
+    font-size: 20px;
+    margin-top: 10px;
+    /* color: #7f7f7f; */
+    color: white;
+}
+
+.nav-item::before {
+    content: '';
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    width: 0;
+    height: 3px;
+    /* Adjust the height of the underline as needed */
+    /* background-color: #7f7f7f; */
+    background-color: white;
+    transition: width 0.5s ease;
+}
+
+.nav-item:hover::before {
+    width: 100%;
+}
+
+@media only screen and (max-width: 767px) {
+    #navbar-container {
+            display: flex;
+            flex-direction: column;
+        }
+
+    #navbar-inner-container-left {
+        margin-left: 0px;
+    }
+
+    #logo-letter {
+        font-size: 30px;
+        /* color: #7f7f7f; */
+        color: white;
+        transition: transform 0.5s ease;
+        padding-bottom: 5px;
+        cursor: pointer;
+    }
+
+    #navbar-inner-container-right {
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .nav-item {
+        margin-right: 10px;
+        margin-left: 10px;
+        cursor: pointer;
+        position: relative;
+        font-size: 20px;
+        margin-top: 10px;
+        /* color: #7f7f7f; */
+        color: white;
+    }
+}

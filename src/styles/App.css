@@ -1,0 +1,90 @@
+/* Reset some default styles */
+body,
+html {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    font-family: serif;
+    /* Prevent horizontal scrolling */
+}
+
+/* Apply a box-sizing border-box model to all elements */
+* {
+    box-sizing: border-box;
+}
+
+/* Style for the full-page container */
+#full-page-container {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    /* Use min-height instead of height to allow for content overflow */
+    overflow-x: hidden;
+    /* Prevent horizontal scrolling */
+}
+
+/* Style for the navbar */
+#navbar-outer-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    /* Use 100% instead of 100vw to ensure it takes full width */
+    /* background-color: pink; */
+    background-color: white;
+    transition: height 0.5s, padding 0.5s;
+    background-color: #889bae;
+    z-index: 10;
+    /* margin: 0px; */
+    /* padding: 0px; */
+    /* box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); */
+    /* Add a smooth transition effect for the height change */
+}
+
+/* Style for the content */
+#content-outer-container {
+    /* background-color: aqua; */
+    flex-grow: 1;
+    padding-top: 80px;
+    /* Initial padding to account for the initial navbar height */
+    overflow-y: auto;
+    /* Allow vertical scrolling */
+    padding-bottom: 210px;
+}
+
+/* Style for the footer */
+#upper-footer-outer-container {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    transition: height 1s, padding 0.5s;
+    box-shadow: 0px -4px 8px rgba(0, 0, 0, 0.1);
+    /* Use 100% instead of 100vw to ensure it takes full width */
+    /* background-color: white; */
+    background-color: #889bae;
+    color: white;
+}
+
+/* Style for the footer */
+#lower-footer-outer-container {
+    display: none;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    transition: height 0.5s 0.5s;
+    box-shadow: 0px -4px 8px rgba(0, 0, 0, 0.1);
+    /* Add a delay of 1s after the upper-footer transition */
+    /* Use 100% instead of 100vw to ensure it takes full width */
+}
+
+@media only screen and (max-width: 767px) {
+    #upper-footer-outer-container {
+        display: none;
+    }
+
+    #lower-footer-outer-container {
+        display: none;
+    }
+}
