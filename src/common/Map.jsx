@@ -4,7 +4,7 @@ import L from 'leaflet'; // Import Leaflet library
 import 'leaflet/dist/leaflet.css';
 
 // Import your custom marker icon
-import customMarkerIcon from '../images/blue-square.png';
+import customMarkerIcon from '../images/pin.png';
 
 const Map = () => {
   // Create a custom icon instance
