@@ -10,7 +10,7 @@ const Map = () => {
   // Create a custom icon instance
   const customIcon = new L.Icon({
     iconUrl: customMarkerIcon, // Path to your custom icon
-    iconSize: [32, 32], // Size of the icon
+    iconSize: [50, 50], // Size of the icon
     iconAnchor: [16, 32], // Anchor point of the icon (centered, bottom)
     popupAnchor: [0, -32], // Anchor point for popups (top, centered)
   });
