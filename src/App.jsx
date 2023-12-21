@@ -65,7 +65,6 @@ function App() {
         <div
           id='upper-footer-outer-container'
           style={{ height: `${upperFooterHeight}px`, paddingBottom: `${lowerFooterHeight * 2}px` }}>
-          <p style={{ 'textAlign': 'center', 'fontSize': '30px' }}>Alex & Joe</p>
           <p style={{ 'textAlign': 'center', 'fontSize': '30px' }}>June 29th, 2024</p>
           <p style={{ 'textAlign': 'center', 'fontSize': '30px' }}>Brule, WI</p>
         </div>
