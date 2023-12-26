@@ -1,0 +1,95 @@
+#lodging-container {
+    text-align: center;
+    color: #7f7f7f;
+}
+
+#lodging-container p {
+    font-size: 20px;
+}
+
+#lodging-outer-container {
+    width: 90%;
+    margin-left: 5%;
+    display: flex;
+}
+
+#lodging-outer-container img {
+    width: 30px;
+    height: 30px;
+    margin-top: 10px;
+}
+
+#lodging-outer-container a {
+    color: #7f7f7f;
+    font-size: 15px;
+    text-decoration: underline;
+    display: flex;
+    flex-direction: row;
+}
+
+#lodging-outer-container p {
+    font-size: 15px;
+    margin-left: 5px;
+}
+
+#lodging-outer-container h3 {
+    margin-top: 70px;
+}
+
+#lodging-left-side {
+    width: 50%;
+    text-align: left;
+    margin-left: 10%;
+}
+
+#lodging-right-side {
+    width: 50%;
+    text-align: left;
+}
+
+#disclaimer-container {
+    width: 60%;
+    margin-left: 20%;
+    text-align: left;
+}
+
+#disclaimer-container p {
+    font-size: 15px;;
+}
+
+@media only screen and (max-width: 767px) {
+    #lodging-container {
+        text-align: center;
+        color: #7f7f7f;
+        margin-top: 40px;
+    }
+
+    #lodging-container p {
+        font-size: 20px;
+    }
+
+    #disclaimer-container {
+        width: 90%;
+        margin-left: 5%;
+        text-align: left;
+    }
+
+    #lodging-outer-container {
+        width: 90%;
+        margin-left: 5%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    #lodging-left-side {
+        width: 90%;
+        text-align: left;
+        margin-left: 5%;
+    }
+
+    #lodging-right-side {
+        width: 90%;
+        text-align: left;
+        margin-left: 5%;
+    }
+}

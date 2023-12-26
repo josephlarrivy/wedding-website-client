@@ -6,6 +6,7 @@ import Info from './components/Info';
 import Location from './components/Location';
 import Contact from './components/Contact';
 import Rsvp from './components/Rsvp';
+import Lodging from './components/Lodging';
 
 
 const Router = () => {
@@ -14,8 +15,9 @@ const Router = () => {
     <Routes>
       <Route path="/" element={<Home />} />
       <Route path="/location" element={<Location />} />
-      <Route path="/rsvp" element={<Rsvp />} />
+      <Route path="/lodging" element={<Lodging />} />
 
+      <Route path="/rsvp" element={<Rsvp />} />
       <Route path="/info" element={<Info />} />
       <Route path="/contact" element={<Contact />} />
     </Routes>
