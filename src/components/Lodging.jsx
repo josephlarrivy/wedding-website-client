@@ -75,6 +75,11 @@ const Lodging = () => {
             <p>Search VRBO</p>
           </a>
         </div>
+
+        <br></br>
+        <br></br>
+        <br></br>
+
         <div id='lodging-right-side'>
           <h2>Hotels in Duluth</h2>
           <p>(38 miles or about 50 minutes to venue)</p>
