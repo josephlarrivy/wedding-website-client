@@ -5,8 +5,9 @@ import Home from './components/Home';
 import Info from './components/Info';
 import Location from './components/Location';
 import Contact from './components/Contact';
-import Rsvp from './components/Rsvp';
+import RsvpLanding from './components/RsvpLanding';
 import Lodging from './components/Lodging';
+import RsvpInfo from './components/RsvpInfo';
 
 
 const Router = () => {
@@ -17,7 +18,9 @@ const Router = () => {
       <Route path="/location" element={<Location />} />
       <Route path="/lodging" element={<Lodging />} />
 
-      <Route path="/rsvp" element={<Rsvp />} />
+      <Route path="/rsvp" element={<RsvpLanding />} />
+      <Route path="/rsvp/:invitationId" element={<RsvpInfo />} />
+
       <Route path="/info" element={<Info />} />
       <Route path="/contact" element={<Contact />} />
     </Routes>
