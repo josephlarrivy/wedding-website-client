@@ -72,7 +72,7 @@ class ApiClient {
 	}
 
 	async sendConfirmAttendance(personId, value) {
-		// console.log(id);
+		// console.log(personId, value);
 		try {
 			const result = await this.makeRequest(`/rsvp/confirm/${personId}/${value}`, 'GET', '');
 			if (result) {
