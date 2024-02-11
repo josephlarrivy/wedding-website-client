@@ -6,11 +6,11 @@ class ApiClient {
 	}
 
 	getBaseURL(environment) {
-		if (environment === 'dev') {
+		if (environment === 'production') {
 			return 'http://localhost:3001';
 		} else if (environment === 'production') {
 			// Replace 'your-heroku-app' with the actual name of your Heroku app
-			return 'https://your-heroku-app.herokuapp.com';
+			return 'https://wedding-website-server-7fe1dc9c40ef.herokuapp.com';
 		} else {
 			throw new Error('Invalid environment. Use "dev" or "production".');
 		}
