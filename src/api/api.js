@@ -1,12 +1,12 @@
 import axios from 'axios';
 
 class ApiClient {
-	constructor(environment = 'dev') {
+	constructor(environment = 'production') {
 		this.baseURL = this.getBaseURL(environment);
 	}
 
 	getBaseURL(environment) {
-		if (environment === 'production') {
+		if (environment === 'dev') {
 			return 'http://localhost:3001';
 		} else if (environment === 'production') {
 			// Replace 'your-heroku-app' with the actual name of your Heroku app
