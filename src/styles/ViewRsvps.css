@@ -1,0 +1,49 @@
+#page-container {
+    height: auto;
+    min-height: 120vh;
+    background-color: #ECF0F1;
+    text-align: center;
+    margin-top: -30px;
+}
+
+#invitations-container {
+
+}
+
+#invitations-container .boxes-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+    
+#invitations-container .single-invitation {
+    text-align: center;
+    width: 400px;
+    /* border: 1px solid black; */
+    background-color: white;
+    margin: 10px;
+    border-radius: 10px;
+}
+
+#invitations-container .person-line {
+    width: 200px;
+    /* color: white; */
+}
+
+#invitations-container .guest-status {
+    width: 200px;
+    /* color: white; */
+}
+
+#invitations-container .people-container {
+    padding: 10px 10px;
+    display: flex;
+    background-color: #889bae;
+    border-radius: 10px;
+    color: white;
+    justify-content: space-around;
+}
+
+#invitations-container .invisible-line {
+    /* color: white; */
+}

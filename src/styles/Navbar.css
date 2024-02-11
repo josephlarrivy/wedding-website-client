@@ -16,6 +16,12 @@
     margin-left: 20px;
 }
 
+#navbar-inner-container-left img {
+    width: 30px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+}
+ 
 #logo-letter {
     font-size: 28px;
     /* color: #7f7f7f; */

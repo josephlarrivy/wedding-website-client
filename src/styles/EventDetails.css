@@ -1,0 +1,31 @@
+
+
+#event-details-container {
+    text-align: center;
+    color: #7f7f7f;
+}
+
+#images-container {
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+}
+
+#images-container .image-and-caption-container {
+    margin: 20px;
+}
+
+@media only screen and (max-width: 767px) {
+
+    #event-details-container {
+        text-align: center;
+        color: #7f7f7f;
+        margin-top: 60px;
+    }
+
+    #images-container {
+        margin-top: 30px;
+        display: flex;
+        flex-direction: column;
+    }
+}

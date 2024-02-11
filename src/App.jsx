@@ -67,6 +67,7 @@ function App() {
           style={{ height: `${upperFooterHeight}px`, paddingBottom: `${lowerFooterHeight * 2}px` }}>
           <p style={{ 'textAlign': 'center', 'fontSize': '30px' }}>June 29th, 2024</p>
           <p style={{ 'textAlign': 'center', 'fontSize': '30px' }}>Brule, WI</p>
+          {/* <a href='https://larrivysoftware.com/'>2024 Larrivy Software</a> */}
         </div>
         {/* <div id='lower-footer-outer-container' style={{ height: `${lowerFooterHeight}px` }}>
           <p style={{ 'textAlign': 'center', 'fontSize': '30px', 'color': '#7f7f7f'}}>June 29th, 2024</p>

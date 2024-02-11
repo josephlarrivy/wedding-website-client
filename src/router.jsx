@@ -8,6 +8,8 @@ import Contact from './components/Contact';
 import RsvpLanding from './components/RsvpLanding';
 import Lodging from './components/Lodging';
 import RsvpInfo from './components/RsvpInfo';
+import ViewRsvps from './components/ViewRsvps';
+import EventDetails from './components/EventDetails';
 
 
 const Router = () => {
@@ -17,9 +19,11 @@ const Router = () => {
       <Route path="/" element={<Home />} />
       <Route path="/location" element={<Location />} />
       <Route path="/lodging" element={<Lodging />} />
+      <Route path="/eventdetails" element={<EventDetails />} />
 
       <Route path="/rsvp" element={<RsvpLanding />} />
       <Route path="/rsvp/:invitationId" element={<RsvpInfo />} />
+      <Route path="/viewAll/:viewType" element={<ViewRsvps />} />
 
       <Route path="/info" element={<Info />} />
       <Route path="/contact" element={<Contact />} />

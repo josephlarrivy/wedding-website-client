@@ -1,0 +1,38 @@
+
+
+#confirm-overlay-container {
+    position: absolute;
+    z-index: 10;
+    width: 100vw;
+    height: 130vh;
+    top: 0;
+    backdrop-filter: blur(10px);
+}
+
+
+#confirm-overlay-text-container {
+    width: 500px;
+    height: 300px;
+    margin: auto;
+    margin-top: 200px;
+    background-color: #889bae;
+    padding: 30px;
+    border-radius: 10px;
+}
+
+#confirm-overlay-container #confirm-overlay-text-container h1 {
+    color: white;
+    text-align: center;
+}
+
+#confirm-overlay-container #confirm-overlay-text-container button {
+    width: 300px;
+    height: 30px;
+    margin-left: calc(50% - 150px);
+    margin-top: 10px;
+    background-color: white;
+    border: 1px solid black;
+    border-radius: 5px;
+    cursor: pointer;
+    border: none;
+}

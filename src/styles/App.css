@@ -64,6 +64,7 @@ html {
     /* background-color: white; */
     background-color: #889bae;
     color: white;
+    text-align: center;
 }
 
 /* Style for the footer */
@@ -77,6 +78,10 @@ html {
     box-shadow: 0px -4px 8px rgba(0, 0, 0, 0.1);
     /* Add a delay of 1s after the upper-footer transition */
     /* Use 100% instead of 100vw to ensure it takes full width */
+}
+
+a {
+    color: white;
 }
 
 @media only screen and (max-width: 767px) {

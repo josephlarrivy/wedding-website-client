@@ -17,15 +17,22 @@ const RsvpLanding = () => {
   // Function to handle form submission
   const handleSubmit = async (event) => {
     event.preventDefault();
+    let firstNameNormalized = firstName.trim().toLowerCase();
+    let lastNameNormalized = lastName.trim().toLowerCase();
     try {
-      const response = await apiCall.checkForName({ firstName, lastName });
+      const response = await apiCall.checkForName({ 
+        "firstName": firstNameNormalized,
+        "lastName": lastNameNormalized 
+      });
       console.log(response);
+
       if (response.status == 200) {
         console.log(response.data.invitation_id)
         navigateTo(`/rsvp/${response.data.invitation_id}`)
       } else {
         setError(`We were not able to find ${firstName} ${lastName} in our reservations.`)
       }
+
     } catch (error) {
       console.error('Error in API request:', error);
       setError(`We were not able to find <b>${firstName} ${lastName}</b>.`)
@@ -72,6 +79,14 @@ const RsvpLanding = () => {
           <p>Please check your spelling.</p>
         </div>
       }
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
     </div>
   );
 };
