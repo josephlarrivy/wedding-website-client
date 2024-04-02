@@ -1,6 +1,7 @@
 
 import oasisLogo from '../images/oasis_del_norte_logo.png'
 import shanePic from '../images/shane_nelson_pic.png'
+import maxLogo from '../images/maxLogo.png'
 import '../styles/EventDetails.css'
 
 const EventDetails = () => {
@@ -27,6 +28,11 @@ const EventDetails = () => {
         <div className='image-and-caption-container'>
           <img src={shanePic}></img>
           <p>Music by Shane Nelson</p>
+        </div>
+
+        <div className='image-and-caption-container'>
+          <img src={maxLogo}></img>
+          <p>Photography by Max Caven</p>
         </div>
 
       </div>

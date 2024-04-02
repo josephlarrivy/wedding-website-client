@@ -17,7 +17,7 @@ const ConfirmOverlay = ({ setShowConfirmOverlay }) => {
   return (
     <div id='confirm-overlay-container'>
       <div id='confirm-overlay-text-container'>
-        <h1>Thank you for your rsvp</h1>
+        <h1>Thank you for your rsvp.</h1>
         <br />
         <button onClick={() => close()}>exit</button>
       </div>

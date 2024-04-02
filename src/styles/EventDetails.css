@@ -15,6 +15,15 @@
     margin: 20px;
 }
 
+#images-container .image-and-caption-container {
+    margin: 20px;
+}
+
+#images-container .image-and-caption-container img {
+    /* width: 200px; */
+    height: 200px;
+}
+
 @media only screen and (max-width: 767px) {
 
     #event-details-container {

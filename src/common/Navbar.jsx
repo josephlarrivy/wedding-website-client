@@ -43,7 +43,7 @@ const Navbar = ({ navbarStatus }) => {
         <p onClick={() => navigateTo('/')} className='nav-item'>Home</p>
         <p onClick={() => navigateTo('/location')} className='nav-item'>Location</p>
         <p onClick={() => navigateTo('/lodging')} className='nav-item'>Lodging</p>
-        {/* <p onClick={() => navigateTo('/eventdetails')} className='nav-item'>Event Details</p> */}
+        <p onClick={() => navigateTo('/eventdetails')} className='nav-item'>Event Details</p>
         {/* <p onClick={() => navigateTo('/rsvp')} className='nav-item'>RSVP</p> */}
       </div>
     </div>

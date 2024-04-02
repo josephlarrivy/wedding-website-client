@@ -27,6 +27,8 @@ const Router = () => {
 
       <Route path="/info" element={<Info />} />
       <Route path="/contact" element={<Contact />} />
+
+      <Route path="/viewrsvps" element={<ViewRsvps />}></Route>
     </Routes>
   )
 }
