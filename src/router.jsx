@@ -10,6 +10,7 @@ import Lodging from './components/Lodging';
 import RsvpInfo from './components/RsvpInfo';
 import ViewRsvps from './components/ViewRsvps';
 import EventDetails from './components/EventDetails';
+import NewRsvp from './components/NewRsvp';
 
 
 const Router = () => {
@@ -20,13 +21,14 @@ const Router = () => {
       <Route path="/location" element={<Location />} />
       <Route path="/lodging" element={<Lodging />} />
       <Route path="/eventdetails" element={<EventDetails />} />
+      <Route path="/rsvp" element={<NewRsvp />} />
 
-      <Route path="/rsvp" element={<RsvpLanding />} />
+      {/* <Route path="/rsvp" element={<RsvpLanding />} />
       <Route path="/rsvp/:invitationId" element={<RsvpInfo />} />
-      <Route path="/viewAll/:viewType" element={<ViewRsvps />} />
+      <Route path="/viewAll/:viewType" element={<ViewRsvps />} /> */}
 
-      <Route path="/info" element={<Info />} />
-      <Route path="/contact" element={<Contact />} />
+      {/* <Route path="/info" element={<Info />} /> */}
+      {/* <Route path="/contact" element={<Contact />} /> */}
 
       <Route path="/viewrsvps" element={<ViewRsvps />}></Route>
     </Routes>

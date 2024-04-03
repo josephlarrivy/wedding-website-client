@@ -1,7 +1,7 @@
 import axios from 'axios';
 
 class ApiClient {
-	constructor(environment = 'production') {
+	constructor(environment = 'dev') {
 		this.baseURL = this.getBaseURL(environment);
 	}
 
@@ -30,6 +30,24 @@ class ApiClient {
 		} catch (error) {
 			console.error('API Request Error:', error.message);
 			throw error;
+		}
+	}
+
+	async newSubmitRsvp(name, isAttending, guest, isGuestAttending, isBringingChildren) {
+		const data = { name, isAttending, guest, isGuestAttending, isBringingChildren }
+		console.log(data);
+		try {
+			const result = await this.makeRequest('/rsvp/newRsvp', 'POST', data);
+			console.log(result)
+			// Check if the result is truthy (i.e., not null or undefined)
+			if (result) {
+				console.log(result)
+				return { status: 200, data: result };
+			} else {
+				return { status: 404, message: 'Not Found' };
+			}
+		} catch (error) {
+			return { status: 404, message: 'Not Found' };
 		}
 	}
 

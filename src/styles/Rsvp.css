@@ -1,6 +1,8 @@
 #rsvp-container {
     text-align: center;
     color: #7f7f7f;
+    width: 80vw;
+    margin-left: 10vw;
 }
 
 #rsvp-container label, p {
@@ -30,4 +32,11 @@
     border: none;
     border-radius: 5px;
     cursor: pointer;
+}
+
+/* Target the checkbox input element */
+input[type="checkbox"] {
+    /* Increase the size of the checkbox */
+    width: 20px;
+    height: 20px;
 }
