@@ -3,14 +3,14 @@
 import { useNavigate } from 'react-router-dom';
 import '../styles/ConfirmOverlay.css'
 
-const ConfirmOverlay = ({ setShowConfirmOverlay }) => {
+const ConfirmOverlay = () => {
 
   const navigateTo = useNavigate()
 
 
 
   const close = () => {
-    setShowConfirmOverlay(false)
+    // setShowConfirmOverlay(false)
     navigateTo('/')
   }
 

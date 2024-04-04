@@ -2,6 +2,10 @@
     text-align: center;
 }
 
+#view-rspvs-page-container h1 {
+    color: #7f7f7f;
+}
+
 #view-rspvs-page-container .rsvp-table {
     display: table;
     width: 100%;
@@ -25,6 +29,6 @@
 }
 
 /* Optional: Alternating row colors */
-#view-rspvs-page-container .rsvp-table .table-row:nth-child(even) {
+#view-rspvs-page-container .rsvp-table .table-row:nth-child(odd) {
     background-color: #f2f2f2;
 }

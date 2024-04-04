@@ -1,10 +1,12 @@
 import { useState } from 'react';
 import '../styles/Rsvp.css'
 import ApiClient from '../api/api';
+import { useNavigate } from 'react-router-dom';
 
 const NewRsvp = () => {
 
   const apiRequest = new ApiClient();
+  const navigateTo = useNavigate()
 
   const [yourName, setYourName] = useState('');
   const [yourGuestsName, setYourGuestsName] = useState('');
@@ -44,6 +46,13 @@ const NewRsvp = () => {
       yourName, attendingYourName, yourGuestsName, attendingYourGuest, bringingChildren
     );
     console.log(response);
+    if (response.status == 200) {
+      window.scrollTo({
+        top: 0,
+        behavior: 'smooth' // Optional: smooth scrolling animation
+      });
+      navigateTo('/showConfirm')
+    }
   };
 
   return (
@@ -119,7 +128,7 @@ const NewRsvp = () => {
           checked={attendingYourGuest}
           onChange={() => handleYourGuestAttendanceChange(true)}
         />
-        Attending
+        Guest Attending
       </label>
       <br />
       <label htmlFor='your-guest-not-attending'>
@@ -131,7 +140,7 @@ const NewRsvp = () => {
           checked={!attendingYourGuest}
           onChange={() => handleYourGuestAttendanceChange(false)}
         />
-        Not Attending
+        No Guest
       </label>
 
       <br />

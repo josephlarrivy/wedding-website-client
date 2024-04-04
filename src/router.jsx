@@ -12,6 +12,7 @@ import ViewRsvps from './components/ViewRsvps';
 import EventDetails from './components/EventDetails';
 import NewRsvp from './components/NewRsvp';
 import NewViewRsvps from './components/NewViewRsvps';
+import ConfirmOverlay from './components/ConfirmOverlay';
 
 
 const Router = () => {
@@ -23,6 +24,7 @@ const Router = () => {
       <Route path="/lodging" element={<Lodging />} />
       <Route path="/eventdetails" element={<EventDetails />} />
       <Route path="/rsvp" element={<NewRsvp />} />
+      <Route path="/showConfirm" element={<ConfirmOverlay />} />
 
       {/* <Route path="/rsvp" element={<RsvpLanding />} />
       <Route path="/rsvp/:invitationId" element={<RsvpInfo />} />
