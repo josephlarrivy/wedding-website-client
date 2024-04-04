@@ -11,6 +11,7 @@ import RsvpInfo from './components/RsvpInfo';
 import ViewRsvps from './components/ViewRsvps';
 import EventDetails from './components/EventDetails';
 import NewRsvp from './components/NewRsvp';
+import NewViewRsvps from './components/NewViewRsvps';
 
 
 const Router = () => {
@@ -30,7 +31,7 @@ const Router = () => {
       {/* <Route path="/info" element={<Info />} /> */}
       {/* <Route path="/contact" element={<Contact />} /> */}
 
-      <Route path="/viewrsvps" element={<ViewRsvps />}></Route>
+      <Route path="/viewrsvps" element={<NewViewRsvps />}></Route>
     </Routes>
   )
 }

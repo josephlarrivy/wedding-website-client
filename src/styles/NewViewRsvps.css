@@ -1,0 +1,30 @@
+#view-rspvs-page-container {
+    text-align: center;
+}
+
+#view-rspvs-page-container .rsvp-table {
+    display: table;
+    width: 100%;
+    border-collapse: collapse;
+}
+
+#view-rspvs-page-container .rsvp-table .table-header,
+#view-rspvs-page-container .rsvp-table .table-row {
+    display: table-row;
+}
+
+#view-rspvs-page-container .rsvp-table .table-cell {
+    display: table-cell;
+    padding: 8px;
+    border-bottom: 1px solid #ddd;
+    /* Add border bottom to each cell */
+}
+
+#view-rspvs-page-container .rsvp-table .table-cell:first-child {
+    font-weight: bold;
+}
+
+/* Optional: Alternating row colors */
+#view-rspvs-page-container .rsvp-table .table-row:nth-child(even) {
+    background-color: #f2f2f2;
+}

@@ -1,7 +1,7 @@
 import axios from 'axios';
 
 class ApiClient {
-	constructor(environment = 'dev') {
+	constructor(environment = 'production') {
 		this.baseURL = this.getBaseURL(environment);
 	}
 
@@ -38,7 +38,7 @@ class ApiClient {
 		console.log(data);
 		try {
 			const result = await this.makeRequest('/rsvp/newRsvp', 'POST', data);
-			console.log(result)
+			// console.log(result)
 			// Check if the result is truthy (i.e., not null or undefined)
 			if (result) {
 				console.log(result)
@@ -50,6 +50,28 @@ class ApiClient {
 			return { status: 404, message: 'Not Found' };
 		}
 	}
+
+	async getAllSubmittedRsvps() {
+		try {
+			const result = await this.makeRequest(`/rsvp/viewRsvps`, 'GET', '');
+			if (result) {
+				// console.log(result)
+				return { status: 200, data: result };
+			} else {
+				return { status: 404, message: 'Not Found' };
+			}
+		} catch (error) {
+			return { status: 404, message: 'Not Found' };
+		}
+	}
+
+
+
+
+
+
+
+
 
 	async checkForName(data) {
 		console.log(data);
