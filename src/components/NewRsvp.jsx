@@ -78,7 +78,8 @@ const NewRsvp = () => {
         />
       </label>
 
-      <p>Your RSVP:</p>
+      {/* <p>Your RSVP:</p> */}
+      <br />
       <label htmlFor='your-name-attending'>
         <input
           type='radio'
@@ -118,7 +119,8 @@ const NewRsvp = () => {
         />
       </label>
 
-      <p>Your Guest's RSVP:</p>
+      {/* <p>Your Guest's RSVP:</p> */}
+      <br />
       <label htmlFor='your-guest-attending'>
         <input
           type='radio'
