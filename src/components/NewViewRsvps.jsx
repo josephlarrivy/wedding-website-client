@@ -38,8 +38,8 @@ const NewViewRsvps = () => {
               <div className="table-cell">{index + 1}</div>
               <div className="table-cell">{item.person_one_name}</div>
               <div className="table-cell">{item?.person_one_attending ? "attending" : "not attending"}</div>
-              <div className="table-cell">{item.person_two_name || "No Guest"}</div>
-              <div className="table-cell">{item?.person_two_attending ? "attending" : "no guest"}</div>
+              <div className="table-cell">{item.person_two_name || ""}</div>
+              <div className="table-cell">{item?.person_two_attending ? "attending" : ""}</div>
               <div className="table-cell">{item?.bringing_children ? "yes" : "no"}</div>
             </div>
           );
