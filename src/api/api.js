@@ -1,7 +1,7 @@
 import axios from 'axios';
 
 class ApiClient {
-	constructor(environment = 'dev') {
+	constructor(environment = 'production') {
 		this.baseURL = this.getBaseURL(environment);
 	}
 
