@@ -21,6 +21,9 @@ const NewViewRsvps = () => {
 
   return(
     <div id="view-rspvs-page-container">
+      <br />
+      <br />
+      <br />
       <h1>RSVP Responses</h1>
       <br />
       <div className="rsvp-table">
